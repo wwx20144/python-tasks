@@ -17,7 +17,7 @@ while True:
         cv2.circle(frame, center, radius, (0, 0, 255), 2)
         cv2.line(frame, (center[0], center[1] - radius), (center[0], center[1] + radius), (0, 0, 255), 2)
         cv2.line(frame, (center[0] - radius, center[1]), (center[0] + radius, center[1]), (0, 0, 255), 2)
-    cv2.imshow('Sniper Crosshair', frame)
+    cv2.imshow('Sniper Crosshair (press q to quit)', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 cap.release()
